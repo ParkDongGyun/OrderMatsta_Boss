@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bn_home"
+        android:icon="@drawable/selector_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/bn_order"
+        android:icon="@drawable/selector_order"
+        android:title="@string/title_order"/>
+
+    <item
+        android:id="@+id/bn_myinfo"
+        android:icon="@drawable/selector_myinfo"
+        android:title="@string/title_my_profile"/>
+
+    <item
+        android:id="@+id/bn_setting"
+        android:icon="@drawable/selector_setting"
+        android:title="@string/title_setting" />
+
+</menu>

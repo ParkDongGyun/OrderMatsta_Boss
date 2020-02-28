@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MyinfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="21dp"
+        android:orientation="vertical"
+        android:background="@drawable/roundrect"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_myinfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="18dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_shop_review"/>
+
+        <TextView
+            android:id="@+id/tv_myinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            android:text="열정 사장님"/>
+
+        <TextView
+            android:id="@+id/tv_myinfo_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_gravity="center"
+            android:text="dongkyun5654@gmail.com"/>
+
+        <TextView
+            android:id="@+id/tv_myinfo_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            android:text="010-6780-5875"/>
+
+        <TextView
+            android:id="@+id/tv_myinfo_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:text="26세 | 남"/>
+
+        <Button
+            android:id="@+id/btn_myinfo"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/roundrect"
+            android:layout_gravity="center"
+            android:text="수정"
+            android:textColor="@color/ordermaster_color"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</RelativeLayout>

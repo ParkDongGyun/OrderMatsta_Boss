@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sbsj.ordermatstaboss"
+    android:targetSandboxVersion="2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:name=".Login.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_5"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.OrderlistActivity"></activity>
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.RegisterGoodsActivity" />
+        <activity android:name=".Activity.EditCategoryActivity" />
+        <activity android:name=".Activity.RegisterMasterActivity" />
+        <activity android:name=".Activity.StoreDetailActivity" />
+        <activity android:name=".Activity.AddressActivity" />
+        <activity android:name=".Activity.RegisterStoreActivity" />
+        <activity android:name=".Activity.StoreActivity" />
+        <activity
+            android:name=".Activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_appkey" />
+
+        <activity android:name=".Activity.MainActivity" />
+
+        <service android:name=".Util.FirebaseInstanceIDServic"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

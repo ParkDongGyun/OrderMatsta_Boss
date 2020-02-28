@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterStoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ordermaster_color">
+
+            <TextView
+                android:id="@+id/tv_rs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="점포 등록"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/iv_rs_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/im_store" />
+
+            <ImageView
+                android:id="@+id/iv_rs_image2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_photo_profile" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_rs_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="점포명을 입력해주세요.(필수)"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_rs_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:background="@color/tm_color"
+                android:singleLine="true"
+                android:hint="점포 주소지를 입력해주세요.(필수)"
+                android:padding="16dp"
+                android:ellipsize="end"
+                android:layout_weight="8"/>
+
+            <ImageView
+                android:id="@+id/iv_rs_address"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/btn_adress"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_rs_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="상세 주소를 입력해주세요.(필수)"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/et_rs_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="점포 연락처를 입력해주세요.(필수)"
+            android:padding="16dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_rs_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="영업시간 또는 휴무일 등을 입력해주세요."
+            android:padding="16dp"
+            android:minLines="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginVertical="3dp"
+            android:text="* 완료시 자동 생성된 QR코드를 테이블에 붙착해주세요."
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_rs_complete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/ordermaster_color"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RegisterMasterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ordermaster_color"
+        app:title=" ">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="메뉴 등록"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/iv_rg_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/im_store" />
+
+        <ImageView
+            android:id="@+id/iv_rg_image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="45dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_photo_profile" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_rg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/et_box"
+        android:focusableInTouchMode="true"
+        android:hint="메뉴명을 입력해주세요.(필수)"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/et_rg_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/et_box"
+        android:focusableInTouchMode="true"
+        android:hint="메뉴 설명을 입력해주세요.(선택)"
+        android:padding="16dp"
+        android:minLines="2" />
+
+    <EditText
+        android:id="@+id/et_rg_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/et_box"
+        android:focusableInTouchMode="true"
+        android:hint="가격을 원 단위로 입력주세요.(필수)  ex) 10000원"
+        android:inputType="number"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btn_rg_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="완료"
+        android:textColor="@color/white" />
+
+</LinearLayout>

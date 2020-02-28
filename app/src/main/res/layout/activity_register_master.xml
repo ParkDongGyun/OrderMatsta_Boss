@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterMasterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_rm_memberinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_store"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ordermaster_color">
+
+            <TextView
+                android:id="@+id/toolbar_title_register_master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원정보 등록"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/iv_rm_profile1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/im_profile" />
+
+            <ImageView
+                android:id="@+id/iv_rm_profile2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="45dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_photo_profile" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_rm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="이름(실명)을 입력해주세요."
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/et_rm_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/et_box"
+            android:focusableInTouchMode="true"
+            android:hint="휴대폰 번호 -를 빼고 입력해주세요.(선택)"
+            android:inputType="number"
+            android:padding="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <EditText
+                android:id="@+id/et_rm_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/et_box"
+                android:focusableInTouchMode="false"
+                android:hint="생년월일을 입력해주세요.(선택)"
+                android:padding="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_rm_birth"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/btn_calendar" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_rm_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_male"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_selector"
+                android:button="@drawable/rb_selector"
+                android:text="남자"
+                android:textAlignment="center"
+                android:textColor="@color/half_tm_color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_female"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_selector"
+                android:button="@drawable/rb_selector"
+                android:text="여자"
+                android:textAlignment="center"
+                android:textColor="@color/half_tm_color"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_agree_all"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_agree_all"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:button="@drawable/cb_selector" />
+
+            <TextView
+                android:id="@+id/tv_agree_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="전체동의"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginVertical="3dp"
+            android:text="* 주문 관련 결제진행을 위해 약관 동의가 필요합니다."
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_mastercomplete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/ordermaster_color"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+    </LinearLayout>
+</ScrollView>

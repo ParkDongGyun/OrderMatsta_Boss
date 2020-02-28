@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_storelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ordermaster_color">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/ib_storelist_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/btn_header_back"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/tb_title_storelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="오더 쿡"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+                <ImageButton
+
+                    android:id="@+id/ib_storelist_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/btn_header_store_add"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/iv_storelist_top_img"
+            android:layout_below="@id/tb_storelist"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration2"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">오더 쿠커</string>
+
+    <string name="kakao_appkey">9b04edba95e0367612ac5ad4a1d5c08e</string>
+    <string name="defend_word">#####</string>
+    <string name="NetworkCheck">OK</string>
+
+    <string name="permission_msg">권한 요청에 수락해야 이용 가능합니다. /n 설정에서 앱 권한을 허용해주세요.</string>
+    <string name="prepare_service">준비중인 서비스입니다.</string>
+    <string name="check_network">인터넷 상태를 확인해주세요.</string>
+    <string name="oneprice_msg">%s 원</string>
+    <string name="backAlert_register_title">등록 취소</string>
+    <string name="backAlert_register_msg">입력한 내용은 저장되지 않습니다. 정말로 뒤로가시겠습니끼?</string>
+    <string name="backAlert_quit_title">종료</string>
+    <string name="backAlert_quit_msg">종료 버튼을 누르시면 앱이 종료됩니다.</string>
+
+    <string name="btn_google_text">구글 아이디로 로그인</string>
+    <string name="btn_naver_text">네이버 아이디로 로그인</string>
+    <string name="btn_kakao_text">카카오 아이디로 로그인</string>
+
+    <string name="agree_title_1">결제 내용 확인 후 위 내용에 동의(필수)</string>
+    <string name="agree_title_2">개인정보 수집 및 이용동의(필수)</string>
+    <string name="agree_title_3">개인정보 제 3자 제공동의(필수)</string>
+    <string name="agree_title_4">전자금융거래 이용약관(필수)</string>
+
+    <string name="title_home">홈</string>
+    <string name="title_order">주문</string>
+    <string name="title_my_profile">내정보</string>
+    <string name="title_setting">설정</string>
+
+    <string name="id">id</string>
+    <string name="directory">directory</string>
+    <string name="sns_id">sns_id</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
+    <string name="gender">gender</string>
+    <string name="birthday">birthday</string>
+    <string name="date">date</string>
+    <string name="master_id">master_id</string>
+    <string name="category">category</string>
+    <string name="address">address</string>
+    <string name="image">image</string>
+    <string name="store_id">store_id</string>
+    <string name="sequence">sequence</string>
+    <string name="menucate_id">menucate_id</string>
+    <string name="price">price</string>
+    <string name="detail">detail</string>
+    <string name="goods_id">goods_id</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundrect"
+    android:backgroundTint="#EEEEEE"
+    android:orientation="vertical"
+    android:paddingVertical="16dp"
+    android:layout_margin="8dp">
+
+    <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+        android:id="@+id/cti_orderstorename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="상호명"
+        app:value="교촌치킨(다사점)" />
+
+    <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+        android:id="@+id/cti_ordergoodsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="주문메뉴"
+        app:value="교촌순살(R) X1\n교촌반반순살 X2" />
+
+    <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+        android:id="@+id/cti_orderstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="상태"
+        app:value="대기중"
+        app:value_style="1"/>
+
+    <ImageView
+        android:id="@+id/iv_orderexpand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:src="@drawable/ic_up" />
+
+    <LinearLayout
+        android:id="@+id/ll_orderdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+            android:id="@+id/cti_orderdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:title="주문시간"
+            app:value="2020-02-28 21:53:47" />
+
+        <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+            android:id="@+id/cti_orderwrapping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="음식 수령"
+            app:value="포장" />
+
+        <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+            android:id="@+id/cti_orderid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="주문 번호"
+            app:value="76" />
+
+        <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+            android:id="@+id/cti_ordertablenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="테이블 번호"
+            app:value="-" />
+
+        <com.sbsj.ordermatstaboss.Util.Custom_Textview_item
+            android:id="@+id/cti_orderprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="총 결제금"
+            app:value="56,000원" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ordercancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundrect"
+            android:backgroundTint="#CF1616"
+            android:text="주문 취소"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_orderapprove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundrect"
+            android:backgroundTint="@color/ordermaster_color"
+            android:text="주문 승인"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ordercomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundrect"
+        android:backgroundTint="@color/ordermaster_color"
+        android:text="음식 완료"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+</LinearLayout>

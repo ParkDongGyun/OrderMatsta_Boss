@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit_storeinfo"
+        android:icon="@drawable/btn_header_edit"
+        android:title="edit_storeinfomation"
+        app:showAsAction="always"/>
+</menu>

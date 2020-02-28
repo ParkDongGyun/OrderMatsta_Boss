@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#f7ac1d</color>
+    <color name ="ordermaster_color">#f7ac1d</color>
+    <color name="colorAccent">#f7ac1d</color>
+    <color name="kakaocolorvalue">#F7E600</color>
+    <color name ="navercolorvalue">#1fc102</color>
+    <color name = "white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name ="gray">#808080</color>
+    <color name ="Lightgray">#dedede</color>
+
+
+
+    <color name="btn_google_bg">#DE4C3F</color>
+    <color name="btn_naver_bg">#3ACE00</color>
+    <color name="btn_kakao_bg">#FFE711</color>
+
+    <color name="tm_color">#00FFFFFF</color>
+    <color name="half_tm_color">#75E6E3E3</color>
+
+    <color name="bg_category">#83D5D0D0</color>
+</resources>

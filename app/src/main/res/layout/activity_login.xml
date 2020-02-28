@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7ac1d"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        android:background="#f7ac1d"
+        android:scaleType="fitXY"
+        android:src="@drawable/bi_intro" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_google"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <com.sbsj.ordermatstaboss.Util.CustomBtnLogin
+                android:id="@+id/btn_google_custom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:bg="@color/btn_google_bg"
+                app:symbol="@drawable/ic_google"
+                app:text="@string/btn_google_text" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:id="@+id/btn_naver"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <com.sbsj.ordermatstaboss.Util.CustomBtnLogin
+                android:id="@+id/btn_naver_custom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:bg="@color/btn_naver_bg"
+                app:symbol="@drawable/ic_naver"
+                app:text="@string/btn_naver_text" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/btn_kakao"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+
+            <com.sbsj.ordermatstaboss.Util.CustomBtnLogin
+                android:id="@+id/btn_kakao_custom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:bg="@color/btn_kakao_bg"
+                app:symbol="@drawable/ic_kakao"
+                app:text="@string/btn_kakao_text" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

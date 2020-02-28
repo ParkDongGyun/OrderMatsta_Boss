@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomBtnLogin">
+        <attr name="bg" format="integer|reference"/>
+        <attr name="symbol" format="integer|reference"/>
+        <attr name="text" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomOrderItem">
+        <attr name="title" format="string|reference"/>
+        <attr name="value" format="string|reference"/>
+        <attr name="value_color" format="integer|reference"/>
+        <attr name="value_style" format="integer|reference"/>
+    </declare-styleable>
+</resources>

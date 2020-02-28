@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "845191476196",
+    "firebase_url": "https://ordermatstaboss.firebaseio.com",
+    "project_id": "ordermatstaboss",
+    "storage_bucket": "ordermatstaboss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845191476196:android:27d058edbfd7808c4b4df1",
+        "android_client_info": {
+          "package_name": "com.sbsj.ordermatstaboss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845191476196-0kfrelnmosl1qb8mttqpv3sdlug8p52a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sbsj.ordermatstaboss",
+            "certificate_hash": "f4864e3d828808e5b4977fcfd5928e6695b33caf"
+          }
+        },
+        {
+          "client_id": "845191476196-msjpuuq3pucefiu1njfdcqd5o67gct1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD75dwZJaN1oJBUgZtb2cFWB7Y0dsdvrUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845191476196-msjpuuq3pucefiu1njfdcqd5o67gct1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

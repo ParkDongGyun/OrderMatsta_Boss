@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_login"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/roundrect"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="32dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="32dp"
+        android:src="@drawable/ic_google"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_login"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="구글 아이디로 로그인"
+        android:textColor="@color/white"
+        android:letterSpacing="0.1"/>
+</RelativeLayout>

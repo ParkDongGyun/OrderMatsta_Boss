@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_storeitem"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/fl_storeimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp">
+        <ImageView
+            android:id="@+id/iv_storeimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/im_ready" />
+        <ImageView
+            android:id="@+id/iv_storeprepare"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/im_ready" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_storeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/fl_storeimage"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="성보네 맛집"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_storeaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_storeName"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/fl_storeimage"
+        android:text="대구광역시 달성군 다사읍 달구벌대로 790 삼산아파트 101동 306호"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:maxLines="2"
+        android:ellipsize="marquee"/>
+
+    <ImageView
+        android:id="@+id/iv_storereview"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/fl_storeimage"
+        android:layout_below="@id/tv_storeaddress"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_shop_review"/>
+
+    <TextView
+        android:id="@+id/tv_storereview"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/iv_storereview"
+        android:layout_below="@id/tv_storeaddress"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="리뷰 0"
+        android:textSize="12dp"/>
+
+</RelativeLayout>

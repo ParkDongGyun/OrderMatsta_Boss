@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="masterinfo_column">
+        <item>@string/id</item>
+        <item>@string/directory</item>
+        <item>@string/sns_id</item>
+        <item>@string/name</item>
+        <item>@string/phone</item>
+        <item>@string/gender</item>
+        <item>@string/birthday</item>
+        <item>@string/date</item>
+    </string-array>
+    <string-array name="storeinfo_column">
+        <item>@string/id</item>
+        <item>@string/master_id</item>
+        <item>@string/name</item>
+        <item>@string/phone</item>
+        <item>@string/category</item>
+        <item>@string/address</item>
+        <item>@string/image</item>
+        <item>@string/date</item>
+    </string-array>
+    <string-array name="menucateinfo_column">
+        <item>@string/id</item>
+        <item>@string/store_id</item>
+        <item>@string/name</item>
+        <item>@string/sequence</item>
+
+    </string-array>
+    <string-array name="goodsinfo_column">
+        <item>@string/id</item>
+        <item>@string/store_id</item>
+        <item>@string/name</item>
+        <item>@string/price</item>
+        <item>@string/detail</item>
+        <item>@string/image</item>
+    </string-array>
+
+    <string-array name="store_category">
+        <item>치킨</item>
+        <item>피자</item>
+        <item>한식</item>
+        <item>중식</item>
+        <item>일식</item>
+        <item>분식</item>
+        <item>양식</item>
+        <item>햄버거</item>
+        <item>족발/보쌈</item>
+    </string-array>
+
+    <string-array name="menu_category">
+        <item>메인음식</item>
+        <item>사이드음식</item>
+        <item>음료</item>
+    </string-array>
+
+    <string-array name="agreetitle_arr">
+        <item>@string/agree_title_1</item>
+        <item>@string/agree_title_2</item>
+        <item>@string/agree_title_3</item>
+        <item>@string/agree_title_4</item>
+    </string-array>
+</resources>

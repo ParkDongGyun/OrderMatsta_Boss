@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_store_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/half_tm_color">
+
+    <ImageView
+        android:id="@+id/iv_frame_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/loading_info"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_progress_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/iv_frame_loading"
+        android:layout_centerHorizontal="true"
+        android:text="  Loading..  "
+        android:textSize="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/ordermaster_color"/>
+</RelativeLayout>

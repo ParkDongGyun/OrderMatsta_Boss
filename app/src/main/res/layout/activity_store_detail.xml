@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.StoreDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginVertical="8dp">
+                <ImageView
+                    android:id="@+id/iv_sd_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pictureimg" />
+
+                <ImageView
+                    android:id="@+id/iv_sd_prepare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/im_ready" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_sd_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="12dp"
+                    android:text="교촌치킨(건대점)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sd_review"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="12dp"
+                    android:layout_toRightOf="@id/tv_sd_name"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/iv_sd_review"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_menu_review" />
+
+                        <TextView
+                            android:id="@+id/tv_sd_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="리뷰 14"
+                            android:textColor="#f7ac1d"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_sd_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sd_name"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="서울 광진구 아차산로31길 13 건대 빌딩 1층"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:maxLines="2"
+                    android:ellipsize="marquee" />
+
+                <TextView
+                    android:id="@+id/tv_sd_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sd_address"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginTop="11dp"
+                    android:text="영업시간 : 평일, 토요일 17:00 ~새벽 01:30 \n 일요일 15:00 ~ 24:00"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sd_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/roundrect"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_sd_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="영업 개시"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/sw_sd_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginRight="16dp"
+                    android:checked="true"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/selector_switch" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_sd_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/roundrect"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_sd_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="QR코드 공유"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_sd_qr"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="24dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/qr" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/roundrect"
+                android:backgroundTint="@color/ordermaster_color"
+                android:text="메뉴 등록"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_sd_nogoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginVertical="50dp"
+                    android:text="등록된 메뉴가 없습니다."
+                    android:textSize="30dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_storedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tm_color"
+        app:title=" " />
+</RelativeLayout>
